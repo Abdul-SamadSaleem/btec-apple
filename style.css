@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+button,
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(40, 40, 40);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 20%;
+  min-height: 7vh;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+nav,
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.navLinks a,
+.navLinks button {
+  margin-left: 2rem;
+}
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.buyButton {
+  padding: 0.2rem 2rem;
+  font-size: 0.6rem;
+  color: white;
+  background: #3056f5;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.firstPage {
+  min-height: 100vh;
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstPageText {
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.firstPageTitle {
+  font-size: 1.2rem;
+}
+
+.firstPageSubtitle {
+  font-size: 3rem;
+}
+
+.introVid {
+  position: absolute;
+}
+
+.secondPage {
+  min-height: 125vh;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.smokeVideo {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.secondText {
+  padding: 5% 30%;
+  position: relative;
+  font-size: 3.4989898989rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.highlight::selection,
+.textContainer::selection {
+  background-color: transparent;
+}
+
+.thirdPage {
+  position: relative;
+  padding: 0% 20%;
+}
+
+.productTextContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+}
+
+.phoneSize {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.proSize {
+  text-align: right;
+}
+
+.maxSize {
+  text-align: left;
+}
+
+.productImages {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.largePhone {
+  position: relative;
+  transform: translateX(40%) scale(0.9);
+  z-index: 1;
+}
+
+.smallPhone {
+  position: relative;
+  transform: translateX(-40%) scale(0.9);
+  z-index: 2;
+}
+
+.retinaLine {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -17%);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.fourthPage {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.purchaseLeft {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: rgb(248, 248, 248);
+}
+
+.phoneGallery {
+  display: flex;
+  align-self: flex-start;
+}
+
+.phoneGallery img {
+  transform: scale(0.8);
+}
+
+.phoneGalleryContainer {
+  min-width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swatchContainer {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.swatchContainer span {
+  font-size: 0.8rem;
+}
+
+.swatches img {
+  padding: 0.5rem 0.3rem;
+  cursor: pointer;
+}
+
+.purchaseRight {
+  flex: 1;
+  position: relative;
+  background: rgb(19, 19, 19);
+}
+
+.purchaseRight img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%) scale(0.9);
+  transform-origin: bottom;
+}
+
+.fifthPage {
+  min-height: 100vh;
+}
+
+.productVideo {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.productInfoContainer {
+  position: relative;
+  z-index: 2;
+  color: rgb(194, 194, 194);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+  padding: 0% 10rem;
+}
+
+.rightInfo,
+.leftInfo {
+  width: 20%;
+}
+
+.leftInfo h3,
+.rightInfo h3 {
+  padding: 3rem 0rem;
+  color: rgb(194, 194, 194);
+}
+
+.leftInfo span,
+.rightInfo span {
+  font-size: 1.65rem;
+  color: rgb(194, 194, 194);
+}
+
+.blue {
+  z-index: 1;
+}
+
+.sixthPage {
+  min-height: 100vh;
+  padding: 10% 20%;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+}
+.portrait {
+  height: 70vh;
+}
+.photoTitle {
+  font-size: 2rem;
+}
+.photoSubtitle {
+  font-size: 4rem;
+}
+.phoneVideo {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  z-index: 2;
+  transform: translate(-40%, 0%);
+}
+.phoneVideo img,
+.phoneVideo video {
+  position: absolute;
+}
+.phoneVideo img {
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  transform: scale(0.8);
+}
+.phoneVideo video {
+  left: 1rem;
+  bottom: 1rem;
+  transform: scale(0.81);
+  border-radius: 2rem;
+}
